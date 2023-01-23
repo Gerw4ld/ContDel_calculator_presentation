@@ -23,7 +23,7 @@ public class CalculatorRunner {
                 System.exit(0);
                 break;
         }
-        System.out.println("Calculation finished\n");
+        System.out.println("\nCalculation finished\n");
         System.out.println(String.format("Result of Calculator: %,.2f %s %,.2f is %,.2f", number1, operation, number2, result));
     }
 

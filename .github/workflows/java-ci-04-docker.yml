@@ -40,7 +40,7 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: Update Notifier
           SLACK_ICON_EMOJI: ':bell:'
-          SLACK_MESSAGE: We have new changes - ${{ github.event.head_commit.message }}. In order to download use 'docker run --name democalc_container1 -it --entrypoint /bin/sh gerwald/democalc_public:latest'
+          SLACK_MESSAGE: We have new changes - ${{ github.event.head_commit.message }}. In order to download use 'docker system prune --all --force && docker run --name democalc_container1 -it --entrypoint /bin/sh gerwald/democalc_public:latest'
           SLACK_COLOR: '#efefef'
 
 
